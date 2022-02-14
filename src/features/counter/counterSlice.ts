@@ -26,9 +26,21 @@ export const incrementAsync = createAsyncThunk(
   }
 );
 
+/*
+ * function increment(state) {
+ *    state.value += 1
+ * }
+ *
+ * const decrement = (state) => {
+ *    state.value -= 1
+ * }
+ *
+ * const reducers = {increment, decrement}
+ * createSlice({name, initialState, reducers})
+ */
 export const counterSlice = createSlice({
   name: 'counter',
-  initialState,
+  initialState: initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     increment: (state) => {
