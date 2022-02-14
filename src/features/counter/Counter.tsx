@@ -10,6 +10,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import MyPrettyButton from '../../../styles/MyPrettyButton'
 
 export function Counter() {
   const count = useAppSelector(selectCount);
@@ -62,6 +63,14 @@ export function Counter() {
         >
           Add If Odd
         </button>
+      </div>
+      <div>
+        <MyPrettyButton>
+          This is blue font.
+        </MyPrettyButton>
+        <MyPrettyButton>
+          하나 더 만들기
+        </MyPrettyButton>
       </div>
     </div>
   );

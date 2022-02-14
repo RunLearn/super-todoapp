@@ -56,6 +56,8 @@ export const counterSlice = createSlice({
     // Use the PayloadAction type to declare the contents of `action.payload`
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload;
+      // 객체 형태의 payload였다면
+      // state.value = { ...state, [attribute]: /* code */ }
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,
