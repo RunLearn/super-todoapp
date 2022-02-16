@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/MyPrettyButton.ts" afterDir="false" />
+    <list default="true" id="48c415c7-1594-4070-a9ca-c556bb049f11" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/pages/todoRoom/test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/Doing_btn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/Done_btn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/Todo_btn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,6 +60,9 @@
     </option>
   </component>
   <component name="ProjectId" id="24pCUFQxun7UaSsCxr2CQpyq2vN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
