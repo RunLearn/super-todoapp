@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가">
-      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/CommonButton.tsx" afterDir="false" />
+    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="style : 전체적인 레이아웃">
+      <change afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/Doing_btn.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/Done_btn.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/Todo_btn.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/todoRoom/todoButton/todoButton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/todoRoom/todoRoom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -89,7 +80,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/todoRoom/box" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/todos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -104,6 +95,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rnrmf\Desktop\study\super-todoapp\src\redux\todos" />
       <recent name="C:\Users\rnrmf\Desktop\study\super-todoapp\src\components\todoRoom\box" />
     </key>
   </component>
@@ -155,7 +147,7 @@
       <workItem from="1644833706577" duration="779000" />
       <workItem from="1644835464140" duration="7627000" />
       <workItem from="1645022846070" duration="1014000" />
-      <workItem from="1645023888188" duration="8622000" />
+      <workItem from="1645023888188" duration="9916000" />
     </task>
     <task id="LOCAL-00001" summary="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가">
       <created>1645027580430</created>
@@ -164,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645027580430</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="style : 전체적인 레이아웃">
+      <created>1645032746392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645032746392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가" />
+    <MESSAGE value="style : 전체적인 레이아웃" />
+    <option name="LAST_COMMIT_MESSAGE" value="style : 전체적인 레이아웃" />
   </component>
 </project>
