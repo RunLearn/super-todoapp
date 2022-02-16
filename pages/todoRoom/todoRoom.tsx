@@ -1,20 +1,27 @@
 import React from "react";
-import Todo_btn  from  "../../src/components/todoRoom/buttons/Todo_btn"
-import Doing_btn from  "../../src/components/todoRoom/buttons/Doing_btn"
-import Done_btn from "../../src/components/todoRoom/buttons/Done_btn"
-
-import StyledButton from '../../styles/todoRoom/todoButton/todoButton';
-
+import DoneBox from '../../src/components/todoRoom/box/doneBox';
+import TodoBox from '../../src/components/todoRoom/box/todoBox';
+import DoingBox from '../../src/components/todoRoom/box/doingBox';
+import styled from 'styled-components';
 
 const todoRoom = () => {
   return (
-    <div>
-      <Todo_btn />
-      <Doing_btn />
-      <Done_btn />
-      <StyledButton> asdfas </StyledButton>
-    </div>
+    <FlexContainer>
+      <TodoBox />
+      <DoingBox />
+      <DoneBox />
+    </FlexContainer>
   )
 }
+
+const FlexContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border: 1px solid black;
+  padding: 30px;
+`
+
 
 export default todoRoom;

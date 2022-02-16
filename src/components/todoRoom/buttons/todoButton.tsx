@@ -1,7 +1,16 @@
-import React from 'react';
+import react from 'react';
 import styled from 'styled-components';
+import internal from 'stream';
 
-const StyledButton = styled.button`
+const Doing_btn = (props: any) => {
+  return (
+    <Button>
+      {props.name}
+    </Button>
+  );
+}
+
+const Button = styled.button`
   /* 공통 스타일 */
   display: inline-flex;
   outline: none;
@@ -12,7 +21,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   padding-left: 1rem;
   padding-right: 1rem;
-
+  
   /* 크기 */
   height: 2.25rem;
   font-size: 1rem;
@@ -32,10 +41,5 @@ const StyledButton = styled.button`
   }
 `;
 
-// const Button = (children: any, ...rest: any []) => {
-//   return (
-//     <StyledButton { ...rest }> { children } < /StyledButton>
-//   );
-// };
 
-export default StyledButton;
+export default Doing_btn;
