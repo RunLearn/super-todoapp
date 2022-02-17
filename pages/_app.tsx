@@ -6,7 +6,7 @@ import GlobalStyle from '../styles/global-styles'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={ store } >
-      <GlobalStyle />
+      <GlobalStyle  />
       <Component {...pageProps} />
     </Provider>
   )
