@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
 
-export interface StyledButtonProps {
+export type StyledButtonProps = {
   buttonType?: string;
   borderRadius?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
