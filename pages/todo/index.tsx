@@ -1,13 +1,13 @@
-import PrimaryButton from "../../styles/buttons/PrimaryButton"
+import PrimaryButton from "../../src/components/buttons/PrimaryButton"
+import SecondaryButton from "../../src/components/buttons/SecondaryButton"
 
 
 const index = () => {
   return (
     <>
         <main>
-            <PrimaryButton borderRadius="5px">
-                가나다
-            </PrimaryButton>
+            <PrimaryButton borderRadius="20px">primary</PrimaryButton>
+            <SecondaryButton>secondary</SecondaryButton>
         </main>
     </>
   )

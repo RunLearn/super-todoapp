@@ -2,7 +2,6 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   basicWidth: "320px",
-
   palette: {
     main: "#7b9acc",
     sub: "#FCF6F5",
@@ -14,7 +13,17 @@ const theme: DefaultTheme = {
     info: "blueish",
     light: "white",
     dark: "black",
-  }
+  },
+  fontColor: {
+    primary: "white",
+    secondary: "black",
+    success: "white",
+    warning: "black",
+    danger: "white",
+    info: "white",
+    light: "black",
+    dark: "white",
+  },
 };
 
 const nextTheme: DefaultTheme = {
