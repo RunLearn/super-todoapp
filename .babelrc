@@ -3,7 +3,7 @@
 //next-dev.js?3515:32 Warning: Prop `className` did not match. Server: "sc-PZsNp hxiAzV" Client: "sc-bdvvtL jBDmpo"
 //at button
 //at O (webpack-internal:///./node_modules/styled-components/dist/styled-components.browser.esm.js:31:19811)
-//at Doing_btn (webpack-internal:///./src/components/todoRoom/buttons/todoButton.tsx:30:25)
+//at Doing_btn (webpack-internal:///./src/components/todoRoom/buttons/todoCard.tsx:30:25)
 //at div
 //at O (webpack-internal:///./node_modules/styled-components/dist/styled-components.browser.esm.js:31:19811)
 //at todoBox

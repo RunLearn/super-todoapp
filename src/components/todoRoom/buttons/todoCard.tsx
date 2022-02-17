@@ -2,7 +2,7 @@ import react from 'react';
 import styled from 'styled-components';
 import internal from 'stream';
 
-const Doing_btn = (props: any) => {
+const TodoCard = (props: any) => {
   return (
     <Button>
       {props.name}
@@ -33,4 +33,4 @@ const Button = styled.button`
 `;
 
 
-export default Doing_btn;
+export default TodoCard;

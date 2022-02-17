@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="feat: 리덕스 초기 부분">
-      <change afterPath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" afterDir="false" />
+    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="feat: todoRoomForm.tsx 투두룸 입력창">
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645032746392</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: todoRoomForm.tsx 투두룸 입력창">
+      <created>1645114112212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645114112212</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가" />
     <MESSAGE value="style : 전체적인 레이아웃" />
-    <option name="LAST_COMMIT_MESSAGE" value="style : 전체적인 레이아웃" />
+    <MESSAGE value="feat: todoRoomForm.tsx 투두룸 입력창" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: todoRoomForm.tsx 투두룸 입력창" />
   </component>
 </project>

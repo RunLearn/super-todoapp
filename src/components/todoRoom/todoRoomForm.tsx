@@ -34,24 +34,46 @@ const TodoRoomForm = () => {
   return(
     <>
       <Form>
-        <InputText onChange={textChange} name="title" value={todo.title}></InputText>
-        <InputText onChange={textChange} name="manager" value={todo.manager}></InputText>
-        <InputText onChange={textChange} name="content" value={todo.content}></InputText>
-        <InputText onChange={textChange} name="deadline" type={'number'} value={todo.deadline}></InputText>
-        <InputText onChange={textChange} name="createDate" type={'number'} value={todo.createDate}></InputText>
-        <InputText onChange={textChange} name="dueDate" type={'number'} value={todo.dueDate}></InputText>
+        <div>
+        <label htmlFor='tile'>투두 제목 : </label>
+        <InputText onChange={textChange} id="title" name="title" value={todo.title}></InputText>
+        </div>
+        <div>
+          <label htmlFor='manager'>담당자 : </label>
+        <InputText onChange={textChange} id="manager" name="manager" value={todo.manager}></InputText>
+        </div>
+        <div>
+          <label htmlFor='content'>내용 : </label>
+           <InputText onChange={textChange} id="content" name="content" value={todo.content}></InputText>
+        </div>
+        <div>
+          <label htmlFor='deadline'>마감일 : </label>
+          <InputText onChange={textChange} id="deadline" name="deadline" type={'number'} value={todo.deadline}></InputText>
+        </div>
+        <div>
+          <label htmlFor='createDate'>생성일 : </label>
+           <InputText onChange={textChange} id="createDate" name="createDate" type={'number'} value={todo.createDate}></InputText>
+        </div>
+        <div>
+          <label htmlFor='dueDate'>실제 마감일 : </label>
+          <InputText onChange={textChange} id="dueDate" name="dueDate" type={'number'} value={todo.dueDate}></InputText>
+        </div>
       </Form>
-        <SubmitButton onClick={todoDispatch}></SubmitButton>
+        <SubmitButton onClick={todoDispatch}>할일 등록!</SubmitButton>
       <button onClick={() => { console.log(temp) }}></button>
     </>
   )
 }
 
 const Form = styled.form`
+  display: flex;  
+  flex-direction: column;
 `
 const InputText = styled.input`
+  
 `
 const SubmitButton = styled.button`
+
 `
 
 export default TodoRoomForm;

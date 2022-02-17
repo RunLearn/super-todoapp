@@ -1,6 +1,6 @@
 import react from 'react';
 import styled from 'styled-components';
-import TodoBtn from '../buttons/todoButton';
+import TodoBtn from '../buttons/todoCard';
 import TodoContainer from './TodoContainer';
 
 const todoBox = () => {
