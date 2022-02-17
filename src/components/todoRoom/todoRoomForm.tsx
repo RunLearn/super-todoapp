@@ -4,6 +4,7 @@ import todos, { addTodo } from '../../redux/todoRoom/Todos'
 import { useDispatch,useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { useState} from 'react';
+import { nanoid } from '@reduxjs/toolkit';
 
 const TodoRoomForm = () => {
 
@@ -22,8 +23,10 @@ const TodoRoomForm = () => {
   }
 
   const dispatch = useDispatch();
-  const temp = useSelector((state:RootState)=>state.todos);
-  const todoDispatch =()=> dispatch(addTodo({
+  const todoDispatch =()=> {
+    const id = nanoid();
+    dispatch(addTodo({
+    id:id,
     title:todo.title,
     manager:todo.manager,
     content:todo.content,
@@ -31,6 +34,8 @@ const TodoRoomForm = () => {
     createDate:todo.createDate,
     dueDate:todo.dueDate
   }))
+  console.log(id)
+  }
   return(
     <>
       <Form>
@@ -60,7 +65,6 @@ const TodoRoomForm = () => {
         </div>
       </Form>
         <SubmitButton onClick={todoDispatch}>할일 등록!</SubmitButton>
-      <button onClick={() => { console.log(temp) }}></button>
     </>
   )
 }

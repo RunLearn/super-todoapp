@@ -7,12 +7,13 @@ import { RootState } from '../../../redux/store';
 
 
 const doneBox = () => {
-  const todos = useSelector((state:RootState) => state.todo)
+  const todos = useSelector((state:RootState) => state.done)
   const allTodos = todos.map( (todo:any) => {
     return(
       <TodoCard
+        id={todo.id}
+        key={todo.id}
         type="done"
-        key={todo.title}
         title ={todo.title}
         manager = {todo.manager}
         content = {todo.content}

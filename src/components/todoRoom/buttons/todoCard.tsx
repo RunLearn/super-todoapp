@@ -1,8 +1,10 @@
 import react from 'react';
 import styled from 'styled-components';
 import { useState } from 'react';
-
-//
+import { useDispatch } from 'react-redux';
+import { addDoing, removeDoing } from '../../../redux/todoRoom/Doings';
+import { removeTodo } from '../../../redux/todoRoom/Todos';
+import {removeDone} from '../../../redux/todoRoom/Dones';
 // title: string
 // manager: string
 // content: string
@@ -10,10 +12,12 @@ import { useState } from 'react';
 // createDate:number
 // dueDate: number
 
-
+//TODO : 카드 좌, 우 이동 기능 추가해야함
 const TodoCard = (props: any) => {
-
+  const dispatch = useDispatch();
   const [isFocusCard, setIsFocusCard] = useState(false);
+  // const Todo_Doing = (e) => dispatch(addDoing( props ))
+
 
   return (
     <Button
@@ -24,7 +28,7 @@ const TodoCard = (props: any) => {
       ( props.type =='todo' ?
         (
           <Focusing>
-            <GridItemButton>삭제</GridItemButton>
+            <GridItemButton onClick={() => dispatch(removeTodo(props.id))}>삭제</GridItemButton>
             <GridItemButton>Doing으로</GridItemButton>
           </Focusing>
         )
@@ -32,24 +36,24 @@ const TodoCard = (props: any) => {
         (props.type == 'doing' ?
             <Focusing >
               <GridItemButton>Todo로</GridItemButton>
-              <GridItemButton>삭제</GridItemButton>
+              <GridItemButton onClick={() => dispatch(removeDoing(props.id))}>삭제</GridItemButton>
               <GridItemButton>Done으로</GridItemButton>
             </Focusing>
           :
             <Focusing>
               <GridItemButton>Doing으로</GridItemButton>
-              <GridItemButton>삭제</GridItemButton>
+              <GridItemButton onClick={() => dispatch(removeDone(props.id))}>삭제</GridItemButton>
             </Focusing>
         )
       )
       :
       <GridContainer>
-        <GridTitle>title</GridTitle>
-        <GridContent>content</GridContent>
-        <GridManager>manager</GridManager>
-        <GridDeadline>deadline</GridDeadline>
-        <GridCreateDate>createDate</GridCreateDate>
-        <GridDueDate>dueDate</GridDueDate>
+        <GridTitle>{props.title}</GridTitle>
+        <GridContent>{props.content}</GridContent>
+        <GridManager>{props.manager}</GridManager>
+        <GridDeadline>{props.deadline}</GridDeadline>
+        <GridCreateDate>{props.createDate}</GridCreateDate>
+        <GridDueDate>{props.dueDate}</GridDueDate>
       </GridContainer>
     }
     </Button>

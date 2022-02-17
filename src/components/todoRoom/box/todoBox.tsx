@@ -12,8 +12,9 @@ const todoBox = () => {
   const allTodos = todos.map( (todo:any) => {
     return(
       <TodoCard
+        id={todo.id}
+        key={todo.id}
         type="todo"
-        key={todo.title}
         title ={todo.title}
         manager = {todo.manager}
         content = {todo.content}

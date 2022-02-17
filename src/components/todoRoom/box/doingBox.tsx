@@ -8,12 +8,13 @@ import { RootState } from '../../../redux/store';
 import TodoContainer from './TodoContainer';
 
 const doingBox = () => {
-  const todos = useSelector((state:RootState) => state.todo)
+  const todos = useSelector((state:RootState) => state.doing)
   const allTodos = todos.map( (todo:any) => {
     return(
       <TodoCard
+        id={todo.id}
+        key={todo.id}
         type="doing"
-        key={todo.title}
         title ={todo.title}
         manager = {todo.manager}
         content = {todo.content}

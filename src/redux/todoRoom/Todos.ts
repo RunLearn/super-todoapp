@@ -1,39 +1,35 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit';
 import { Interface } from 'readline';
-
-interface Todo {
-  title: string
-  manager: string
-  content: string
-  deadline: number
-  createDate:number
-  dueDate: number
-}
-
-const initState:Todo[] = [
-  {
-    title: "string",
-    manager: "string",
-    content: "string",
-    deadline: 1,
-    createDate:2,
-    dueDate: 3,
-  },
-]
+import { Id } from '@reduxjs/toolkit/dist/query/tsHelpers';
+import TempData from './initState';
+import initState from './initState';
 
 const TodoSlice=createSlice({
+
   name: 'todo',
-  initialState:initState,
+  initialState:TempData,
   reducers: {
     addTodo: {
       reducer: (state, action: PayloadAction) => {
         state.push(action.payload)
       },
     },
+
+    moveDoing: {
+      reducer: (state, action) => {
+
+      }
+    },
+
+    removeTodo: {
+      reducer: (state, action) => {
+        return state.filter(one => one.id !== action.payload)
+      }
+    },
   }
 });
 
 const {actions, reducer} = TodoSlice
-export const {addTodo} = TodoSlice.actions
+export const {addTodo, removeTodo} = TodoSlice.actions
 
 export default reducer

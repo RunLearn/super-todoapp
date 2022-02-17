@@ -1,39 +1,26 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import { Interface } from 'readline';
+import TempData from './initState';
 
-interface Todo {
-  title: string
-  manager: string
-  content: string
-  deadline: number
-  createDate:number
-  dueDate: number
-}
-
-const initState:Todo[] = [
-  {
-    title: "string",
-    manager: "string",
-    content: "string",
-    deadline: 1,
-    createDate:2,
-    dueDate: 3,
-  },
-]
 
 const DoingSlice=createSlice({
-  name: 'todo',
-  initialState:initState,
+  name: 'doing',
+  initialState:TempData,
   reducers: {
     addDoing: {
       reducer: (state, action: PayloadAction) => {
         state.push(action.payload)
       },
     },
+    removeDoing: {
+      reducer: (state, action) => {
+        return state.filter(one => one.id !== action.payload)
+      }
+    },
   }
 });
 
 const {actions, reducer} = DoingSlice
-export const {addDoing} = DoingSlice.actions
+export const {addDoing, removeDoing} = DoingSlice.actions
 
 export default reducer
