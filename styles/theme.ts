@@ -6,14 +6,14 @@ const theme: DefaultTheme = {
   color: {
     main: "#7b9acc",
     sub: "#FCF6F5",
-    primary: "",
-    secondary: "",
-    success: "",
-    warning: "",
-    danger: "",
-    info: "",
-    light: "",
-    dark: "",
+    primary: "blue",
+    secondary: "grey",
+    success: "green",
+    warning: "yellow",
+    danger: "red",
+    info: "blueish",
+    light: "white",
+    dark: "black",
   }
 };
 
