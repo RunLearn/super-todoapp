@@ -1,0 +1,25 @@
+//렌더링 시, 크롬에서 아래 에러가 발생해서 임시로 추가
+
+//next-dev.js?3515:32 Warning: Prop `className` did not match. Server: "sc-PZsNp hxiAzV" Client: "sc-bdvvtL jBDmpo"
+//at button
+//at O (webpack-internal:///./node_modules/styled-components/dist/styled-components.browser.esm.js:31:19811)
+//at Doing_btn (webpack-internal:///./src/components/todoRoom/buttons/todoButton.tsx:30:25)
+//at div
+//at O (webpack-internal:///./node_modules/styled-components/dist/styled-components.browser.esm.js:31:19811)
+//at todoBox
+//at div
+//at O (webpack-internal:///./node_modules/styled-components/dist/styled-components.browser.esm.js:31:19811)
+//at todoRoom (webpack-internal:///./pages/todoRoom/todoRoom.tsx:42:76)
+//at Provider (webpack-internal:///./node_modules/react-redux/es/components/Provider.js:16:20)
+//at MyApp (webpack-internal:///./pages/_app.tsx:40:27)
+//at ErrorBoundary (webpack-internal:///./node_modules/next/dist/compiled/@next/react-dev-overlay/client.js:8:20584)
+//at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/compiled/@next/react-dev-overlay/client.js:8:23125)
+//at Container (webpack-internal:///./node_modules/next/dist/client/index.js:359:9)
+//at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:793:26)
+//at Root (webpack-internal:///./node_modules/next/dist/client/index.js:915:27)
+//
+//See more info here: https://nextjs.org/docs/messages/react-hydration-error
+{
+  "presets": ["next/babel"],
+  "plugins": [["styled-components", { "ssr": true }]]
+}

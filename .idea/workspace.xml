@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="style : 전체적인 레이아웃">
-      <change afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
+    <list default="true" id="48c415c7-1594-4070-a9ca-c556bb049f11" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +28,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -64,9 +59,6 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectId" id="24pCUFQxun7UaSsCxr2CQpyq2vN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,61 +70,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/todos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="npm install -D eslint-plugin-prettier eslint-config-prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\rnrmf\Desktop\study\super-todoapp\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\rnrmf\Desktop\study\super-todoapp\src\redux\todos" />
-      <recent name="C:\Users\rnrmf\Desktop\study\super-todoapp\src\components\todoRoom\box" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JavaScriptNodeJsTraceType" factoryName="Spy-js for Node.js" config="" node="project" node-params="" app="" app-params="" working-dir="$PROJECT_DIR$" proxy-port="3547" pass-parent-env="true" limits="1,3,3,50">
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ReactNative" factoryName="React Native">
-      <node-interpreter value="project" />
-      <react-native value="" />
-      <platform value="ANDROID" />
-      <envs />
-      <only-packager />
-      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <method v="2">
-        <option name="ReactNativePackager" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm">
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,24 +94,7 @@
       <workItem from="1644739373654" duration="896000" />
       <workItem from="1644833706577" duration="779000" />
       <workItem from="1644835464140" duration="7627000" />
-      <workItem from="1645022846070" duration="1014000" />
-      <workItem from="1645023888188" duration="9916000" />
     </task>
-    <task id="LOCAL-00001" summary="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가">
-      <created>1645027580430</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1645027580430</updated>
-    </task>
-    <task id="LOCAL-00002" summary="style : 전체적인 레이아웃">
-      <created>1645032746392</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1645032746392</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,10 +110,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가" />
-    <MESSAGE value="style : 전체적인 레이아웃" />
-    <option name="LAST_COMMIT_MESSAGE" value="style : 전체적인 레이아웃" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
