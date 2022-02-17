@@ -3,9 +3,11 @@ import DoneBox from '../../src/components/todoRoom/box/doneBox';
 import TodoBox from '../../src/components/todoRoom/box/todoBox';
 import DoingBox from '../../src/components/todoRoom/box/doingBox';
 import styled from 'styled-components';
-import {ADDTODO} from '../../src/redux/todoRoom/Todos'
+import {addTodo} from '../../src/redux/todoRoom/Todos'
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../src/redux/store'
+import TodoRoomForm from '../../src/components/todoRoom/todoRoomForm';
+
 
 const todoRoom = () => {
   const dispatch=useDispatch();
@@ -21,20 +23,7 @@ const todoRoom = () => {
         <DoingBox />
         <DoneBox />
       </FlexContainer>
-      <form onSubmit={(event) => {
-        event.preventDefault();
-
-        console.log(temp);
-      }}>
-        <input type='text' placeholder='이름'  />
-        <input type='text' placeholder='담당자' />
-        <input type='text' placeholder='내용' />
-        <input type='text' placeholder='기한' />
-        <input type='text' placeholder='생성일' />
-        <input type='text' placeholder='끝난날' />
-        <input type='submit' value="제출11"/>
-      </form>
-
+      <TodoRoomForm></TodoRoomForm>
     </>
   )
 }
