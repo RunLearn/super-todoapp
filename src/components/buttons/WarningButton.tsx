@@ -2,7 +2,7 @@ import { NextPage } from "next"
 import StyledButton, { StyledButtonProps } from "../../../styles/buttons/StyledButton"
 
 
-const SecondaryButton: NextPage<StyledButtonProps> = (props) => {
+const WarningButton: NextPage<StyledButtonProps> = (props) => {
   return (
     <StyledButton buttonType="warning" { ...props }>
         { props.children }
@@ -10,4 +10,4 @@ const SecondaryButton: NextPage<StyledButtonProps> = (props) => {
   )
 }
 
-export default SecondaryButton
+export default WarningButton
