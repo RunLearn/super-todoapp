@@ -40,7 +40,7 @@ const SampleRedux = () => {
                 >추가</DarkButton>
             </div>
             <div>
-                <LightButton onClick={()=>{
+                <LightButton buttonColor='#888888' onClick={()=>{
                     console.log(todolist)
                 }}
                 >콘솔창에 출력해 보기

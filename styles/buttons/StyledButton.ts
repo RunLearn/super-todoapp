@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export type StyledButtonProps = {
-  buttonType?: string;
+  buttonColor?: string;
   borderRadius?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
@@ -15,10 +15,10 @@ const StyledButton = styled.button<StyledButtonProps>`
   }
 
   ${props => {
-    const btnType = props.buttonType ?? "primary"
+    const btnColor = props.buttonColor ?? "primary"
     return css`
-      background-color: ${ props.theme.palette[btnType] };
-      color: ${ props.theme.fontColor[btnType] };
+      background-color: ${ props.theme.palette[btnColor] ?? btnColor };
+      color: ${ props.theme.fontColor[btnColor] };
       border-radius: ${ props.borderRadius ?? "5px" };
     `
   }}

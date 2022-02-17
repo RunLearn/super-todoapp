@@ -4,7 +4,7 @@ import StyledButton, { StyledButtonProps } from "../../../styles/buttons/StyledB
 
 const SuccessButton: NextPage<StyledButtonProps> = (props) => {
   return (
-    <StyledButton buttonType="success" { ...props }>
+    <StyledButton buttonColor="success" { ...props }>
         { props.children }
     </StyledButton>
   )
