@@ -22,7 +22,7 @@ const TodoRoomForm = () => {
   }
 
   const dispatch = useDispatch();
-  const temp = useSelector((state:RootState)=>state.todo);
+  const temp = useSelector((state:RootState)=>state.todos);
   const todoDispatch =()=> dispatch(addTodo({
     title:todo.title,
     manager:todo.manager,

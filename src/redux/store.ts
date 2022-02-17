@@ -1,9 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from './todoRoom/Todos'
+import TodoReducer from './todoRoom/Todos'
+import DoingReducer from './todoRoom/Doings'
+import DoneReducer from './todoRoom/Dones'
 
 export const store = configureStore({
   reducer: {
-    todo: todoReducer,
+    todo: TodoReducer,
+    doing: DoingReducer,
+    done: DoneReducer,
   },
 });
 export type RootState = ReturnType<typeof store.getState>

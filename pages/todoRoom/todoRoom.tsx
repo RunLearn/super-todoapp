@@ -11,11 +11,11 @@ import TodoRoomForm from '../../src/components/todoRoom/todoRoomForm';
 
 const todoRoom = () => {
   const dispatch=useDispatch();
-  // const addTodo=() => {
+  // const addDoing=() => {
   //   dispatch(ADDTODO)
   // }
   const temp = useSelector((state:RootState)=>state.todo);
-  console.log(temp)
+
   return (
     <>
       <FlexContainer>
