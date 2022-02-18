@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addDoing, removeDoing } from '../../../redux/todoRoom/Doings';
-import { removeTodo } from '../../../redux/todoRoom/Todos';
-import {removeDone} from '../../../redux/todoRoom/Dones';
+import { addTodo, removeTodo } from '../../../redux/todoRoom/Todos';
+import { addDone, removeDone } from '../../../redux/todoRoom/Dones';
+
 // title: string
 // manager: string
 // content: string
@@ -12,11 +13,29 @@ import {removeDone} from '../../../redux/todoRoom/Dones';
 // createDate:number
 // dueDate: number
 
-//TODO : 카드 좌, 우 이동 기능 추가해야함
 const TodoCard = (props: any) => {
   const dispatch = useDispatch();
   const [isFocusCard, setIsFocusCard] = useState(false);
-  // const Todo_Doing = (e) => dispatch(addDoing( props ))
+
+  const todoDoing = (id) => {
+    dispatch(addDoing(props))
+    dispatch(removeTodo(id))
+  }
+
+  const doingDone = (id) => {
+    dispatch(addDone(props))
+    dispatch(removeDoing(id))
+  }
+
+  const doneDoing = (id) => {
+    dispatch(addDoing(props))
+    dispatch(removeDone(id))
+  }
+
+  const doingTodo = (id) => {
+    dispatch(addTodo(props))
+    dispatch(removeDoing(id))
+  }
 
 
   return (
@@ -28,20 +47,21 @@ const TodoCard = (props: any) => {
       ( props.type =='todo' ?
         (
           <Focusing>
-            <GridItemButton onClick={() => dispatch(removeTodo(props.id))}>삭제</GridItemButton>
-            <GridItemButton>Doing으로</GridItemButton>
+            {/*<GridItemButton onClick={() => dispatch(removeTodo(props.id))}>삭제</GridItemButton>*/}
+            <GridItemButton onClick={() => dispatch(removeTodo(props.id)) }>삭제</GridItemButton>
+            <GridItemButton onClick={() => todoDoing(props.id)}>Doing으로</GridItemButton>
           </Focusing>
         )
         :
         (props.type == 'doing' ?
             <Focusing >
-              <GridItemButton>Todo로</GridItemButton>
+              <GridItemButton onClick={() => doingTodo(props.id)}>Todo로</GridItemButton>
               <GridItemButton onClick={() => dispatch(removeDoing(props.id))}>삭제</GridItemButton>
-              <GridItemButton>Done으로</GridItemButton>
+              <GridItemButton onClick={() => doingDone(props.id)}>Done으로</GridItemButton>
             </Focusing>
           :
             <Focusing>
-              <GridItemButton>Doing으로</GridItemButton>
+              <GridItemButton onClick={() => doneDoing(props.id)}>Doing으로</GridItemButton>
               <GridItemButton onClick={() => dispatch(removeDone(props.id))}>삭제</GridItemButton>
             </Focusing>
         )
