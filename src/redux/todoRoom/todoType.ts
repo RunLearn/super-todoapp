@@ -3,9 +3,9 @@ interface TodoType {
   title: string
   manager: string
   content: string
-  deadline: number
-  createDate:number
-  dueDate: number
+  deadline: Date
+  createDate:Date
+  dueDate: Date
 }
 
 export default TodoType;

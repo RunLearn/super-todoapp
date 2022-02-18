@@ -9,12 +9,12 @@ import { nanoid } from '@reduxjs/toolkit';
 const TodoRoomForm = () => {
 
   const [todo, setTodo] = useState({
-    title: "",
-    manager: "",
-    content: "",
-    deadline: 1,
-    createDate: 1,
-    dueDate: 1,
+    title: "임시 제목",
+    manager: "임시 담당자",
+    content: "임시 내용",
+    deadline: "2022-02-31",
+    createDate: Date(),
+    dueDate: "2022-02-28",
   })
 
   const textChange = (e) => {
@@ -53,15 +53,15 @@ const TodoRoomForm = () => {
         </div>
         <div>
           <label htmlFor='deadline'>마감일 : </label>
-          <InputText onChange={textChange} id="deadline" name="deadline" type={'number'} value={todo.deadline}></InputText>
+          <InputText onChange={textChange} id="deadline" name="deadline" type={'date'} value={todo.deadline}></InputText>
         </div>
         <div>
           <label htmlFor='createDate'>생성일 : </label>
-           <InputText onChange={textChange} id="createDate" name="createDate" type={'number'} value={todo.createDate}></InputText>
+           <InputText onChange={textChange} id="createDate" name="createDate" type={'date'} value={todo.createDate}></InputText>
         </div>
         <div>
           <label htmlFor='dueDate'>실제 마감일 : </label>
-          <InputText onChange={textChange} id="dueDate" name="dueDate" type={'number'} value={todo.dueDate}></InputText>
+          <InputText onChange={textChange} id="dueDate" name="dueDate" type={'date'} value={todo.dueDate}></InputText>
         </div>
       </Form>
         <SubmitButton onClick={todoDispatch}>할일 등록!</SubmitButton>

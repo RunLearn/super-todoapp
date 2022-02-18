@@ -25,6 +25,7 @@ const doneBox = () => {
   })
   return (
     <TodoContainer>
+      <h1>Done</h1>
       {allTodos}
     </TodoContainer>
   )

@@ -26,6 +26,8 @@ const doingBox = () => {
   })
   return (
     <TodoContainer>
+      <h1>Doing</h1>
+
       {allTodos}
     </TodoContainer>
   )

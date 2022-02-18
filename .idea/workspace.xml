@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="feat : Todo카드 삭제 기능">
+    <list default="true" id="9e2de960-1702-4421-87fd-eabe0823c2df" name="Changes" comment="feat : Todo카드 이동">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/initState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/initState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/todoType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/todoType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +156,7 @@
       <workItem from="1644835464140" duration="7627000" />
       <workItem from="1645022846070" duration="1014000" />
       <workItem from="1645023888188" duration="9916000" />
-      <workItem from="1645195875761" duration="3362000" />
+      <workItem from="1645195875761" duration="11224000" />
     </task>
     <task id="LOCAL-00001" summary="fix : 새로고침 시, styled-component 적용이 안됨. pages/_document.js 추가">
       <created>1645027580430</created>
@@ -193,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645128557827</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat : Todo카드 이동">
+      <created>1645199333262</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645199333262</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +231,8 @@
     <MESSAGE value="chore : 투두룸폼 간단한 디자인" />
     <MESSAGE value="feat : todoCard.tsx 투두카드 간단 디자인, todo,doing,done store 분리" />
     <MESSAGE value="feat : Todo카드 삭제 기능" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Todo카드 삭제 기능" />
+    <MESSAGE value="feat : Todo카드 이동" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Todo카드 이동" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

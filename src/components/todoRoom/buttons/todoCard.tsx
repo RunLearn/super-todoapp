@@ -1,5 +1,5 @@
 import react from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addDoing, removeDoing } from '../../../redux/todoRoom/Doings';
@@ -48,26 +48,38 @@ const TodoCard = (props: any) => {
         (
           <Focusing>
             {/*<GridItemButton onClick={() => dispatch(removeTodo(props.id))}>삭제</GridItemButton>*/}
-            <GridItemButton onClick={() => dispatch(removeTodo(props.id)) }>삭제</GridItemButton>
-            <GridItemButton onClick={() => todoDoing(props.id)}>Doing으로</GridItemButton>
+            <WhenFocus onClick={() => dispatch(removeTodo(props.id)) }>삭제</WhenFocus>
+            <WhenFocus
+              onClick={() => todoDoing(props.id)}
+              style={{borderLeft: "1px dashed #A89797"}}
+            >Doing으로</WhenFocus>
           </Focusing>
         )
         :
         (props.type == 'doing' ?
             <Focusing >
-              <GridItemButton onClick={() => doingTodo(props.id)}>Todo로</GridItemButton>
-              <GridItemButton onClick={() => dispatch(removeDoing(props.id))}>삭제</GridItemButton>
-              <GridItemButton onClick={() => doingDone(props.id)}>Done으로</GridItemButton>
+              <WhenFocus onClick={() => doingTodo(props.id)}>Todo로</WhenFocus>
+              <WhenFocus
+                onClick={() => dispatch(removeDoing(props.id))}
+                style={{borderLeft: "1px dashed #A89797"}}
+              >삭제</WhenFocus>
+              <WhenFocus
+                onClick={() => doingDone(props.id)}
+                style={{borderLeft: "1px dashed #A89797"}}
+              >Done으로</WhenFocus>
             </Focusing>
           :
             <Focusing>
-              <GridItemButton onClick={() => doneDoing(props.id)}>Doing으로</GridItemButton>
-              <GridItemButton onClick={() => dispatch(removeDone(props.id))}>삭제</GridItemButton>
+              <WhenFocus onClick={() => doneDoing(props.id)}>Doing으로</WhenFocus>
+              <WhenFocus
+                onClick={() => dispatch(removeDone(props.id))}
+                style={{borderLeft: "1px dashed #A89797"}}
+              >삭제</WhenFocus>
             </Focusing>
         )
       )
       :
-      <GridContainer>
+      <GridContainer a={isFocusCard} >
         <GridTitle>{props.title}</GridTitle>
         <GridContent>{props.content}</GridContent>
         <GridManager>{props.manager}</GridManager>
@@ -80,43 +92,109 @@ const TodoCard = (props: any) => {
   );
 }
 const GridTitle = styled.div`
-  vertical-align: center;
+  grid-column: 1;
+  height: 100%;
+  grid-row: 1 / span 2;
+  
+  border-bottom: 1px dashed #A89797;
+  border-right: 1px dashed #A89797;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 const GridContent = styled.div`
+  
+  height: 100%;
   grid-column: 1;
-  grid-row:2 / span 3;
+  grid-row:3 / span 4;
+
+  border-right: 1px dashed black;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 const GridManager = styled.div`
+  height: 100% ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 const GridDeadline = styled.div`
+  height: 100% ;
+
+  border-top: 1px dashed #A89797;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 `
 const GridCreateDate = styled.div`
+  height: 100% ;
+
+  border-top: 1px dashed #A89797;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 `
 const GridDueDate = styled.div`
+  height: 100% ;
+
+  border-top: 1px dashed #A89797;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`
+
+const cardFocusAnimation = keyframes`
+  from {
+    background: #97A2A8;
+    color: whitesmoke;
+  }
+  to {
+    background: whitesmoke ;
+    color: #97A2A8; 
+  }
 `
 const GridContainer = styled.div`
   width: 100%;
   height: 100%;
-
+ 
   display:grid;
   align-items: center;
   grid-template-columns:67% 33%;
   grid-template-rows: repeat(4, 25%) ;
+
+  justify-content: center;
   
- 
+  border: none;
+  border-radius: 4px;
+  background: whitesmoke;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  animation-name: ${cardFocusAnimation};
+  animation-fill-mode: forwards;
 `
 
 const Focusing = styled.div`
   width: 100%;
   height: 100%;
-
+  
   display:flex;
   align-items: center;
 `
-const GridItemButton = styled.button`
+
+const WhenFocus = styled.button`
   border: none;
   border-radius: 4px;
-  color: white;
+  
   cursor: pointer;
   
   /* 크기 */
@@ -125,37 +203,30 @@ const GridItemButton = styled.button`
   font-size: 1rem;
 
   /* 색상 */
-  background: darkslateblue;
-  &:hover {
-    background: #339af0;
-  }
-  &:active {
-    background: #1c7ed6;
-  }  
+  background: whitesmoke;
+  
+
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  animation-name: ${cardFocusAnimation};
+  animation-fill-mode: forwards;
 `
 
 const Button = styled.button`
-  /* 공통 스타일 */
-  border: none;
-  border-radius: 4px;
-  color: white;
   
-  /* 크기 */
+  border: 3px solid  #F5F4DC;
+  
+  padding: 5px;
+  margin: 5px 0px ;
+  
   width: 100%;
-  height: 30%;
-  font-size: 1rem;
-
+  height: 25vh;
+  
+  font-size: 1em;
+  color: #97A2A8;
+  
   /* 색상 */
-  background: darkslateblue;
-  &:hover {
-    background: #339af0;
-    padding:0px
-  }
-  &:active {
-    background: #1c7ed6;
-  }
-
-  /* 기타 */
+  background: white;
 `;
 
 

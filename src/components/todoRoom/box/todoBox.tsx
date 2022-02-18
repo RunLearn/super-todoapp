@@ -26,6 +26,7 @@ const todoBox = () => {
   })
   return (
       <TodoContainer>
+        <h1>Todo</h1>
         {allTodos}
       </TodoContainer>
   )
