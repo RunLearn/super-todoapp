@@ -58,12 +58,12 @@ const NavLayout = styled.nav`
         background: ${(props) => props.theme.sub};
     }
 
-    ul li a {
+   ul li span {
         text-decoration: none;
         color: ${(props) => props.theme.sub};
     }
 
-    ul li.selected a {
+    ul li.selected span {
         color: ${(props) => props.theme.main};
     }
 
