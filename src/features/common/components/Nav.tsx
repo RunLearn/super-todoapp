@@ -1,5 +1,5 @@
+import { setHrOffset } from "@common/utils/nav-function"
 import navMenus from "@common/utils/navMenus"
-import { addClassNameById, getNumericComputedStyle, removeClassNameById } from "@common/utils/style-functions"
 import { NextPage } from "next"
 import Link from "next/link"
 import { useEffect } from "react"
@@ -17,42 +17,9 @@ const Nav: NextPage<NavProps> = (props) => {
         selects[selectedIndex] = ' selected '
     }
 
-    function setHrOffset(hoveredIndex: number) {
-        const navUnderline = document.getElementById('nav-underline')
-        const ul = document.querySelector('nav ul')
-
-        if(ul) {
-            if(hoveredIndex !== selectedIndex) {
-                addClassNameById('nav-underline', 'sub')
-            } else {
-                removeClassNameById('nav-underline', 'sub')
-            }
-
-            let atomicOffsetLeft = 0;
-            const ulPaddingLeft = getNumericComputedStyle(ul!, 'paddingLeft')
-            const navListItems = Array.from(document.querySelectorAll(`nav li`))
-                    .map((element, index) => {
-                        if(index < hoveredIndex) {
-                            atomicOffsetLeft += (element as HTMLElement).offsetWidth
-                        }
-                        return element as HTMLElement
-                    })
-
-            const selectedSpan = (document.querySelectorAll(`nav li span`)[hoveredIndex]) as HTMLElement
-
-            if(navUnderline && selectedSpan!) {
-                const offsetWidth = selectedSpan.offsetWidth
-                const offsetLeft = atomicOffsetLeft + ulPaddingLeft + getNumericComputedStyle(navListItems[hoveredIndex], 'paddingLeft')
-    
-                navUnderline!.style.width = `${ offsetWidth }px`
-                navUnderline!.style.left = `${ offsetLeft }px`
-            }
-        }
-    }
-
     useEffect(()=>{
         console.log('DOMContentLoaded')
-        setHrOffset(selectedIndex)
+        setHrOffset(selectedIndex, selectedIndex)
     }, [])
 
     return (
@@ -67,10 +34,10 @@ const Nav: NextPage<NavProps> = (props) => {
                         return (
                             <li key={ index } className={ selects[index] }
                                 onMouseEnter={(event) => {
-                                    setHrOffset(index)
+                                    setHrOffset(selectedIndex, index)
                                 }}
                                 onMouseLeave={(event) => {
-                                    setHrOffset(selectedIndex)
+                                    setHrOffset(selectedIndex, selectedIndex)
                                 }}
                             >
                                 <b className="left-curve"></b>
