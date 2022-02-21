@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@common/*": ["src/features/common/*"],
+      "@todo/*": ["src/features/todo/*"],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
