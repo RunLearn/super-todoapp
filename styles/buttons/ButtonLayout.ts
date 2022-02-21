@@ -9,10 +9,10 @@ const ButtonLayout = styled.button`
     padding: 4px;
     border-radius: 3px;
 
-    transition: 150ms;
+    transition: 130ms;
     
     &:active {
-        transform: scaleY(.95);
+        transform: scale(.93);
     }
 
     ${ (props) => props.theme.styleSet.buttons }
