@@ -44,7 +44,7 @@ const styleSet = {
         background-color: ${ buttonPalette[className] };
         color: ${ fontColor[className] };
         ${
-          className === 'light' && `
+          ['light', 'sub', 'warning'].includes(className) && `
             border-style: solid;
             border-color: rgb(200,200,200, 0.5);
           `
