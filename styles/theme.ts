@@ -18,7 +18,7 @@ const buttonPalette = {
   success: "green",
   warning: "yellow",
   danger: "red",
-  info: "blueish",
+  info: "#5bc0de",
   light: "white",
   dark: "black",
 }
