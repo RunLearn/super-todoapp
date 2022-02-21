@@ -12,9 +12,9 @@ const navMenus: NavMenu[] = [
         title: 'Todo List',
     },
     {
-        shortName: 'Button Preview',
-        url: '/button',
-        title: 'Button Sample Preview',
+        shortName: 'UI Preview',
+        url: '/ui-preivew',
+        title: 'UI Sample Preview',
     },
 ]
 
