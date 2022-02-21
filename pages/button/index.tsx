@@ -1,33 +1,14 @@
+import Nav from '@common/components/Nav'
 import { NextPage } from 'next'
 import React from 'react'
 import MainLayout from 'styles/divs/MainLayout'
-import ButtonLayout from '../../styles/buttons/ButtonLayout'
-import NavLayout from '../../styles/divs/NavLayout'
+import ButtonLayout from 'styles/buttons/ButtonLayout'
 
 const ButtonSamplePage: NextPage = () => {
     return (
         <>
             <header>
-                <NavLayout>
-                    <h3>Button Sample Page</h3>
-                    <ul>
-                        <li>
-                            <b className="left-curve"></b>
-                            <b className="right-curve"></b>
-                            <a>a</a>
-                        </li>
-                        <li>
-                            <b className="left-curve"></b>
-                            <b className="right-curve"></b>
-                            <a>a</a>
-                        </li>
-                        <li className="selected">
-                            <b className="left-curve"></b>
-                            <b className="right-curve"></b>
-                            <a>a</a>
-                        </li>
-                    </ul>
-                </NavLayout>
+                <Nav selectedIndex={2} />
             </header>
             <MainLayout>
                 <article style={{
