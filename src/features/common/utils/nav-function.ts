@@ -21,10 +21,10 @@ export function setHrOffset(selectedIndex: number, hoveredIndex: number) {
                     return element as HTMLElement
                 })
 
-        const selectedSpan = (document.querySelectorAll(`nav li span`)[hoveredIndex]) as HTMLElement
+        const hoveredSpan = (document.querySelectorAll(`nav li span`)[hoveredIndex]) as HTMLElement
 
-        if(navUnderline && selectedSpan!) {
-            const offsetWidth = selectedSpan.offsetWidth
+        if(navUnderline && hoveredSpan!) {
+            const offsetWidth = hoveredSpan.offsetWidth
             const offsetLeft = atomicOffsetLeft + ulPaddingLeft + getNumericComputedStyle(navListItems[hoveredIndex], 'paddingLeft')
 
             navUnderline!.style.width = `${ offsetWidth }px`
