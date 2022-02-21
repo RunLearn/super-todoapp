@@ -25,7 +25,7 @@ const Nav: NextPage<NavProps> = (props) => {
                     navMenus.map((menu, index, array) => {
                         const { shortName, url } = menu
                         return (
-                            <li className={ selects[index] }>
+                            <li key={ index } className={ selects[index] }>
                                 <b className="left-curve"></b>
                                 <b className="right-curve"></b>
                                 <Link href={ url }>
