@@ -40,6 +40,7 @@ const NavLayout = styled.nav`
         padding-inline-start: 0px;
         margin-bottom: 0px;
         padding-left: 40px;
+        position: relative;
     }
 
     ul li {
@@ -112,6 +113,15 @@ const NavLayout = styled.nav`
     ul li.selected b.left-curve,
     ul li.selected b.right-curve {
         display: block;
+    }
+    
+    hr {
+        transition: 1300ms;
+        background-color: ${ (props) => props.theme.main }
+    }
+
+    hr.sub {
+        background-color: ${ (props) => props.theme.sub }
     }
 `;
 
