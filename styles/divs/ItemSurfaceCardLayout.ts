@@ -7,7 +7,7 @@ export interface ItemSurfaceCardLayout {
 
 const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
     ${(props) => {
-        const flexType = props.flexType ?? 'rowAround';
+        const flexType = props.flexType ?? 'rowAroundMiddle';
         console.log(props.theme.styleSet.flex[flexType])
         return css`
             ${props.theme.styleSet.flex[flexType]}
@@ -20,7 +20,7 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
     background-color: ${(props) => props.theme.light};
     border-radius: 5px;
     box-shadow: ${(props) => props.theme.shadowMedium};
-    min-width: 200px;
+    width: 300px;
     padding: 1rem;
     cursor: default;
     user-select: none;
@@ -35,9 +35,19 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
         width: 100%;
         height: 100%;
     }
+
+    &>ul>li {
+        word-break: break-word;
+        width: 60px;
+    }
     
     &>ul>li.title {
         font-weight: bold;
+        width: 120px;
+    }
+
+    &>ul>li.d-day {
+        font-size: 8pt;
     }
 
 `;
