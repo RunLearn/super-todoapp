@@ -31,22 +31,22 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
         transform: scale(1.05);
     }
 
-    &>ul {
+    ul {
         width: 100%;
         height: 100%;
     }
 
-    &>ul>li {
+    ul>li {
         word-break: break-word;
         width: 60px;
     }
     
-    &>ul>li.title {
+    ul>li.title {
         font-weight: bold;
         width: 120px;
     }
 
-    &>ul>li.d-day {
+    ul>li.d-day {
         font-size: 8pt;
     }
 
