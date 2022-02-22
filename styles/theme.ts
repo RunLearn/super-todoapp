@@ -1,5 +1,6 @@
 import { DefaultTheme } from "styled-components";
 import ButtonType from "../src/features/common/domain/ButtonType";
+import flex from "./styleSet/flex";
 
 const palette = {
   main: "#7b9acc",
@@ -52,6 +53,7 @@ const styleSet = {
       }
     `
   }),
+  flex,
 }
 
 const theme: DefaultTheme = {
