@@ -36,17 +36,17 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
         height: 100%;
     }
 
-    ul>li {
+    ul > li {
         word-break: break-word;
         width: 60px;
     }
     
-    ul>li.title {
+    ul > li.title {
         font-weight: bold;
         width: 120px;
     }
 
-    ul>li.d-day {
+    ul > li.d-day {
         font-size: 8pt;
     }
 
