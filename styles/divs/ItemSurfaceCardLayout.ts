@@ -24,11 +24,14 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
     padding: 1rem;
     cursor: default;
     user-select: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
 
-    transition: 500ms;
+    transition: transform 500ms, z-index 0ms;
 
     &:hover {
         transform: scale(1.02);
+        z-index: 10;
     }
 
     ul {
