@@ -6,20 +6,28 @@ export interface ItemSurfaceCardLayout {
 }
 
 const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
+    /* Variables */
+    ${(props) => css`
+        --light: ${props.theme.light};
+        --shadow-medium: ${props.theme.shadowMedium};
+    `}
+
+    /* Flex */
     ${(props) => {
         const flexType = props.flexType ?? 'rowAroundMiddle';
-        console.log(props.theme.styleSet.flex[flexType])
+        const flexStyleSet = props.theme.styleSet.flex[flexType]
+
         return css`
-            ${props.theme.styleSet.flex[flexType]}
+            ${ flexStyleSet }
             ul {
-                ${props.theme.styleSet.flex[flexType]}
+                ${ flexStyleSet }
             }
         `
     }}
 
-    background-color: ${(props) => props.theme.light};
+    background-color: var(--light);
     border-radius: 5px;
-    box-shadow: ${(props) => props.theme.shadowMedium};
+    box-shadow: var(--shadow-medium);
     width: 300px;
     padding: 1rem;
     cursor: default;

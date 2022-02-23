@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export type NavLayoutProps = {
     id?: string;
@@ -6,6 +6,12 @@ export type NavLayoutProps = {
 }
 
 const NavLayout = styled.nav`
+    /* Variables */
+    ${(props) => css`
+        --main: ${props.theme.main};
+        --sub: ${props.theme.sub};
+    `}
+
     cursor: default;
 
     padding-right: 1rem;
@@ -18,12 +24,12 @@ const NavLayout = styled.nav`
     top: 0px;
     height: auto;
     width: 100%;
-    background: ${(props) => props.theme.main};
+    background: var(--main);
     
     h1, h2, h3, h4, h5, h6 {
         width: 300px;
         word-break: break-word;
-        color: ${(props) => props.theme.sub};
+        color: var(--sub);
         font-family: sans-serif;
         font-size: 16pt;
         font-weight: bold;
@@ -56,16 +62,16 @@ const NavLayout = styled.nav`
     }
 
     ul li.selected {
-        background: ${(props) => props.theme.sub};
+        background: var(--sub);
     }
 
    ul li span {
         text-decoration: none;
-        color: ${(props) => props.theme.sub};
+        color: var(--sub);
     }
 
     ul li.selected span {
-        color: ${(props) => props.theme.main};
+        color: var(--main);
     }
 
     ul li b.left-curve {
@@ -74,7 +80,7 @@ const NavLayout = styled.nav`
         left: -20px;
         height: 100%;
         width: 20px;
-        background: ${(props) => props.theme.sub};
+        background: var(--sub);
         display: none;
     }
 
@@ -86,7 +92,7 @@ const NavLayout = styled.nav`
         width: 100%;
         height: 100%;
         border-bottom-right-radius: 20px;
-        background: ${(props) => props.theme.main};
+        background: var(--main);
     }
 
     ul li b.right-curve {
@@ -95,7 +101,7 @@ const NavLayout = styled.nav`
         top: 0px;
         height: 100%;
         width: 20px;
-        background: ${(props) => props.theme.sub};
+        background: var(--sub);
         display: none;
     }
 
@@ -107,7 +113,7 @@ const NavLayout = styled.nav`
         top: 0;
         height: 100%;
         border-bottom-left-radius: 20px;
-        background: ${(props) => props.theme.main};
+        background: var(--main);
     }
 
     ul li.selected b.left-curve,
@@ -117,11 +123,11 @@ const NavLayout = styled.nav`
     
     hr {
         transition: 1300ms;
-        background-color: ${ (props) => props.theme.main }
+        background-color: var(--main);
     }
 
     hr.sub {
-        background-color: ${ (props) => props.theme.sub }
+        background-color: var(--sub);
     }
 `;
 
