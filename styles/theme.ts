@@ -23,7 +23,7 @@ const buttonPalette = {
   danger: "red",
   info: "#5bc0de",
   light: palette.light,
-  dark: "black",
+  dark: palette.dark,
 }
 
 const fontColor = {
