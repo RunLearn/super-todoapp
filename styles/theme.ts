@@ -9,6 +9,8 @@ const palette = {
   gray: "gray",
   grey: "grey",
   darkGray: '#444444',
+  light: "#FFFFFF",
+  dark: "#000000",
 }
 
 const buttonPalette = {
@@ -20,7 +22,7 @@ const buttonPalette = {
   warning: "yellow",
   danger: "red",
   info: "#5bc0de",
-  light: "white",
+  light: palette.light,
   dark: "black",
 }
 
