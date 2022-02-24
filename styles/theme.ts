@@ -1,5 +1,6 @@
 import { DefaultTheme } from "styled-components";
 import ButtonType from "../src/features/common/domain/ButtonType";
+import { hexWithOpacity } from "./functions/style-function";
 import flex from "./styleSet/flex";
 
 const palette = {
@@ -65,6 +66,7 @@ const theme: DefaultTheme = {
   fontColor,
   styleSet,
   shadowMedium: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+  func: { hexWithOpacity, }
 };
 
 const nextTheme: DefaultTheme = {
