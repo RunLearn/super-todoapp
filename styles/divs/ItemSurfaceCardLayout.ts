@@ -30,6 +30,7 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
     box-shadow: var(--shadow-medium);
     width: 300px;
     padding: 1rem;
+    color: black;
     cursor: default;
     user-select: none;
     margin-top: 1px;
