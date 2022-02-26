@@ -1,7 +1,5 @@
 import Nav from "@common/components/Nav"
-import TodoListConatiner from "@todo/components/TodoListConatiner"
 import { NextPage } from "next"
-import FlexBoxLayout from "styles/divs/FlexBoxLayout"
 import MainLayout from "styles/divs/MainLayout"
 
 const TodoPage: NextPage = () => {
@@ -11,11 +9,7 @@ const TodoPage: NextPage = () => {
                 <Nav menuIndex={1} />
             </header>
             <MainLayout>
-                <FlexBoxLayout flexType="rowAround">
-                    <TodoListConatiner title="Todo" list={ undefined } />
-                    <TodoListConatiner title="Doing" list={ undefined } backgroundColor="#cc9a7b" />
-                    <TodoListConatiner title="Done" list={ undefined } backgroundColor="#9acc7b" />
-                </FlexBoxLayout>
+                <h3>Todo List</h3>
             </MainLayout>
         </>
     )
