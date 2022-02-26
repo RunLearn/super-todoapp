@@ -13,7 +13,7 @@ const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
 
         return css`
             --bg-color: ${func.hexWithOpacity(props.backgroundColor ?? props.theme.main, 0.5)};
-            --title-color: ${ props.backgroundColor ?? props.theme.sub };
+            --title-color: ${ props.titleColor ?? props.theme.sub };
             --shadow: ${props.theme.shadowLarge};
     `}}
 
