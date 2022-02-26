@@ -23,6 +23,6 @@ export const navSlice = createSlice({
 
 export const { setMenu } = navSlice.actions;
 
-export const selectCount = (state: RootState) => state.nav;
+export const selectNav = (state: RootState) => state.nav;
 
 export default navSlice.reducer;
