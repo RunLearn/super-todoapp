@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
-interface ListContainerCardLayoutProps {
+export interface ListContainerCardLayoutProps {
     backgroundColor?: string;
     titleColor?: string;
 }
 
-export const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
+const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
     ${(props) =>  props.theme.styleSet.flex.colCenter}
 
     ${(props) => {
@@ -30,3 +30,5 @@ export const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
         width: 100%;
     }
 `;
+
+export default ListContainerCardLayout
