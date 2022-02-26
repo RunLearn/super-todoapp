@@ -35,14 +35,13 @@ const ButtonSamplePage: NextPage = () => {
                     </article>
                 </section>
                 <section aria-label="Flex Box, Cards Preview" style={{paddingTop: "2rem"}}>
-                    <h1>Flex Box, Cards Preview</h1>
                     <header style={{width: "100%"}}>
-                            <h1>flextype="rowAround"</h1>
+                        <h1>Flex Box, Cards, List Container Preview</h1>
                     </header>
                     <FlexBoxLayout flexType="rowAround">
                         <TodoListConatiner title="Todo" list={ undefined } />
-                        <TodoListConatiner title="Doing" list={ undefined } />
-                        <TodoListConatiner title="Done" list={ undefined } />
+                        <TodoListConatiner title="Doing" list={ undefined } backgroundColor="#cc9a7b" />
+                        <TodoListConatiner title="Done" list={ undefined } backgroundColor="#9acc7b" />
                     </FlexBoxLayout>
                 </section>
             </MainLayout>
