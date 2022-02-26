@@ -1,3 +1,4 @@
+import { NavState } from "@common/redux/navSlice"
 import { setHrOffset } from "@common/utils/nav-function"
 import navMenus from "@common/utils/navMenus"
 import { NextPage } from "next"
@@ -5,12 +6,12 @@ import Link from "next/link"
 import { useEffect } from "react"
 import NavLayout from "styles/divs/NavLayout"
 
-export type NavProps = {
-    selectedIndex?: number;
+export interface NavProps extends NavState {
+    
 }
 
 const Nav: NextPage<NavProps> = (props) => {
-    const selectedIndex = props.selectedIndex ?? -1
+    const selectedIndex = props.menuIndex ?? -1
     const selects = [...new Array(navMenus.length)].fill('')
     
     if(selectedIndex >= 0) {
