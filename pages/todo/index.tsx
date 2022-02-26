@@ -8,7 +8,7 @@ const TodoPage: NextPage = () => {
     return (
         <>
             <header>
-                <Nav selectedIndex={1} />
+                <Nav menuIndex={1} />
             </header>
             <MainLayout>
                 <FlexBoxLayout flexType="rowAround">

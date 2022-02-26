@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <header>
-        <Nav selectedIndex={0} />
+        <Nav menuIndex={0} />
       </header>
       <MainLayout>
         <h3>Just Page</h3>

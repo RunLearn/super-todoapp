@@ -11,7 +11,7 @@ const ButtonSamplePage: NextPage = () => {
     return (
         <>
             <header>
-                <Nav selectedIndex={2} />
+                <Nav menuIndex={2} />
             </header>
             <MainLayout>
                 <section aria-label="Button UI Preview">
