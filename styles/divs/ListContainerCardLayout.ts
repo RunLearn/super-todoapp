@@ -13,11 +13,8 @@ export const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
     `}
 
     background-color: ${(props) => props.theme.func.hexWithOpacity(props.backgroundColor ?? props.theme.main, 0.5)};
-    border-style: solid;
-    border-color: ${(props) => props.theme.func.hexWithOpacity(props.theme.light, 0.5)};
-    border-width: 2px;
     border-radius: 5px;
-    box-shadow: ${props => props.theme.shadowMedium};
+    box-shadow: ${props => props.theme.shadowLarge};
     color: ${(props) => props.backgroundColor ?? props.theme.sub};
     font-weight: bold;
 
