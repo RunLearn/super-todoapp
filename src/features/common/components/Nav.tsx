@@ -1,4 +1,3 @@
-import { NavState } from "@common/redux/navSlice"
 import { setHrOffset } from "@common/utils/nav-function"
 import navMenus from "@common/utils/navMenus"
 import { NextPage } from "next"
@@ -6,8 +5,8 @@ import Link from "next/link"
 import { useEffect } from "react"
 import NavLayout from "styles/divs/NavLayout"
 
-export interface NavProps extends NavState {
-    
+export interface NavProps {
+    menuIndex: number;
 }
 
 const Nav: NextPage<NavProps> = (props) => {

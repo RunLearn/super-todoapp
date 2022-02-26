@@ -4,7 +4,6 @@ import React from 'react'
 import MainLayout from 'styles/divs/MainLayout'
 import ButtonLayout from 'styles/buttons/ButtonLayout'
 import FlexBoxLayout from 'styles/divs/FlexBoxLayout'
-import TodoItemSurfaceCard from '@todo/components/TodoItemSurfaceCard'
 import TodoListConatiner from '@todo/components/TodoListConatiner'
 
 const ButtonSamplePage: NextPage = () => {
