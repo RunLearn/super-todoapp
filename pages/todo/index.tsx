@@ -13,8 +13,8 @@ const TodoPage: NextPage = () => {
             <MainLayout>
                 <FlexBoxLayout flexType="rowAround">
                     <TodoListConatiner title="Todo" list={ undefined } />
-                    <TodoListConatiner title="Doing" list={ undefined } backgroundColor="#cc9a7b" />
-                    <TodoListConatiner title="Done" list={ undefined } backgroundColor="#9acc7b" />
+                    <TodoListConatiner title="Doing" list={ undefined } backgroundColor="primary" />
+                    <TodoListConatiner title="Done" list={ undefined } backgroundColor="info" />
                 </FlexBoxLayout>
             </MainLayout>
         </>
