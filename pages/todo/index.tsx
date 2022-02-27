@@ -1,6 +1,7 @@
 import Nav from "@common/components/Nav"
 import TodoListConatiner from "@todo/components/TodoListConatiner"
 import { NextPage } from "next"
+import { doingList, doneList, todoList } from "src/data/sample"
 import FlexBoxLayout from "styles/divs/FlexBoxLayout"
 import MainLayout from "styles/divs/MainLayout"
 
@@ -12,9 +13,9 @@ const TodoPage: NextPage = () => {
             </header>
             <MainLayout>
                 <FlexBoxLayout flexType="rowAround">
-                    <TodoListConatiner title="Todo" list={ undefined } backgroundColor="primary"/>
-                    <TodoListConatiner title="Doing" list={ undefined } backgroundColor="success" />
-                    <TodoListConatiner title="Done" list={ undefined } backgroundColor="info" />
+                    <TodoListConatiner title="Todo" list={ todoList } backgroundColor="primary"/>
+                    <TodoListConatiner title="Doing" list={ doingList } backgroundColor="success" />
+                    <TodoListConatiner title="Done" list={ doneList } backgroundColor="info" />
                 </FlexBoxLayout>
             </MainLayout>
         </>
