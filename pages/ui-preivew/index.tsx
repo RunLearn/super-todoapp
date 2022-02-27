@@ -39,8 +39,8 @@ const ButtonSamplePage: NextPage = () => {
                     </header>
                     <FlexBoxLayout flexType="rowAround">
                         <TodoListConatiner title="Todo" list={ undefined } />
-                        <TodoListConatiner title="Doing" list={ undefined } backgroundColor="#cc9a7b" />
-                        <TodoListConatiner title="Done" list={ undefined } backgroundColor="#9acc7b" />
+                        <TodoListConatiner title="Doing" list={ undefined } backgroundColor="info" />
+                        <TodoListConatiner title="Done" list={ undefined } backgroundColor="success" />
                     </FlexBoxLayout>
                 </section>
             </MainLayout>
