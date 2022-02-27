@@ -15,24 +15,11 @@ const TodoListConatiner: NextPage<TodoListContainerProps> = (props) => {
             <h1>{ props.title }</h1>
         </header>
         <ul>
-            <li>
-                <TodoItemSurfaceCard title="Sample Item1 가나다라마바사아" name="홍길동" />
-            </li>
-            <li>
-                <TodoItemSurfaceCard title="Sample Item2" name="김길동" deadline="2022-02-23" />
-            </li>
-            <li>
-                <TodoItemSurfaceCard title="Sample Item3" name="고길동" deadline="2022-02-22" />
-            </li>
-            <li>
-                <TodoItemSurfaceCard title="Sample Item4" name="대길이" deadline="2022-02-21" />
-            </li>
-
             {
                 props.list?.map((item, index, array)=>{
                     return (
                         <li key={ index }>
-                            <TodoItemSurfaceCard title={ item.title } name={ item.title } deadline={ item.deadline } />
+                            <TodoItemSurfaceCard title={ item.title } name={ item.name } deadline={ item.deadline } />
                         </li>
                     )
                 })
