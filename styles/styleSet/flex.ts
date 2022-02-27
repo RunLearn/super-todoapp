@@ -1,6 +1,7 @@
 export type FlexType =
     'colCenter' | 'colLeft' | 'colRight' |
     'rowAround' | 'rowAroundMiddle' | 'rowAroundBottom' |
+    'rowBetween' |
     'rowLeft' | 'rowLeftMiddle' |
     'rowRight' | 'rowRightMiddle' |
     'rowCenter' | 'rowCenterMiddle'
@@ -38,6 +39,12 @@ const flex = {
       flex-direction: row;
       justify-content: space-around;
       align-items: end;
+    `,
+    rowBetween: `
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
     `,
     rowLeft: `
       display: flex;
