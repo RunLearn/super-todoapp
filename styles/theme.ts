@@ -3,7 +3,7 @@ import ButtonType from "../src/features/common/domain/ButtonType";
 import { hexWithOpacity } from "./functions/style-function";
 import flex from "./styleSet/flex";
 
-const palette = {
+export const palette = {
   main: "#7b9acc",
   sub: "#FCF6F5",
   lightGray: '#CCCCCC',
@@ -12,19 +12,16 @@ const palette = {
   darkGray: '#444444',
   light: "#FFFFFF",
   dark: "#000000",
-}
-
-const buttonPalette = {
-  main: "#7b9acc",
-  sub: "#FCF6F5",
   primary: "#0000FF",
-  secondary: palette.lightGray,
+  secondary: "#CCCCCC",
   success: "#008000",
   warning: "#FFFF00",
   danger: "#FF0000",
   info: "#5bc0de",
-  light: palette.light,
-  dark: palette.dark,
+}
+
+const buttonPalette = {
+  ...palette
 }
 
 const fontColor = {
