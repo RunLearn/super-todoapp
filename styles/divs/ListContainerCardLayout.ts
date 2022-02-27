@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { palette } from "styles/theme";
 
 export interface ListContainerCardLayoutProps {
     backgroundColor?: string;
@@ -10,12 +11,17 @@ const ListContainerCardLayout = styled.div<ListContainerCardLayoutProps>`
 
     ${(props) => {
         const { func } = props.theme
+        if(props.backgroundColor
+                && Object.keys(palette).includes(props.backgroundColor)) {
+            props.backgroundColor = props.theme[props.backgroundColor]
+        }
 
         return css`
             --bg-color: ${func.hexWithOpacity(props.backgroundColor ?? props.theme.main, 0.5)};
             --title-color: ${ props.titleColor ?? props.theme.sub };
             --shadow: ${props.theme.shadowLarge};
-    `}}
+        `
+    }}
 
     background-color: var(--bg-color);
     border-radius: 5px;
