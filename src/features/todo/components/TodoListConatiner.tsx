@@ -2,6 +2,7 @@ import TodoItemSurface from "@todo/domain/TodoItemSurface"
 import { NextPage } from "next"
 import ListContainerCardLayout, { ListContainerCardLayoutProps } from "styles/divs/ListContainerCardLayout"
 import TodoItemSurfaceCard from "./TodoItemSurfaceCard"
+import TodoListHeader from "./TodoListHeader"
 
 export interface TodoListContainerProps extends ListContainerCardLayoutProps {
     title: string;
@@ -11,9 +12,7 @@ export interface TodoListContainerProps extends ListContainerCardLayoutProps {
 const TodoListConatiner: NextPage<TodoListContainerProps> = (props) => {
   return (
     <ListContainerCardLayout backgroundColor={ props.backgroundColor } titleColor={ props.titleColor }>
-        <header>
-            <h1>{ props.title }</h1>
-        </header>
+        <TodoListHeader title={ props.title } />
         <ul>
             {
                 props.list?.map((item, index, array)=>{
