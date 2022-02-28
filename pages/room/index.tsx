@@ -15,7 +15,7 @@ const TodoPage: NextPage = () => {
             </header>
             <MainLayout>
                 <TodoRoomMainHeader />
-                <FlexBoxLayout flexType="colLeft">
+                <FlexBoxLayout flexType="colLeft" style={{paddingTop: "0.5rem"}}>
                     <FlexBoxLayout flexType="rowAround" style={{width: "100%"}}>
                         <TodoListConatiner title="Todo" list={ todoList } backgroundColor="primary" />
                         <TodoListConatiner title="Doing" list={ doingList } backgroundColor="success" />
