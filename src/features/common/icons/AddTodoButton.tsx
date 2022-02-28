@@ -8,7 +8,7 @@ export interface AddTodoButtonProps extends AddRowIconLayoutProps {
 
 const AddTodoButton: NextPage<AddTodoButtonProps> = (props) => {
     return (
-        <AddRowIconLayout circleFill="primary">
+        <AddRowIconLayout circleFill={ props.circleFill }>
             <FcAddRow />
         </AddRowIconLayout>
     )

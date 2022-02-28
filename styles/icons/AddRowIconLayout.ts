@@ -7,16 +7,17 @@ export interface AddRowIconLayoutProps {
 
 const AddRowIconLayout = styled.div<AddRowIconLayoutProps>`
     ${(props) => {
+        console.log(props.circleFill)
         if(props.circleFill && Object.keys(palette).includes(props.circleFill)) {
             props.circleFill = props.theme[props.circleFill]
         }
 
         return css`
-            --circ-fill: ${props.circleFill ?? props.theme.primary};
+            --circ-fill: ${ props.circleFill ?? "#00AA55" };
         `
     }}
 
-    cursor: pointer;
+    cursor: default;
     padding: 1px;
     transition: all 500ms;
 

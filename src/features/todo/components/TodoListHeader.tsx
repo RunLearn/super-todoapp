@@ -8,17 +8,18 @@ export interface TodoListHeaderProps extends AddTodoButtonProps {
 }
 
 const TodoListHeader: NextPage<TodoListHeaderProps> = (props) => {
-  return (
-    <header>
-        <FlexBoxLayout flexType="rowBetween">
-            <h1 style={{cursor: "default"}}>{ props.title }</h1>
-            <FlexBoxLayout flexType="rowBetween" style={{width: "60px"}}>
-                <AddTodoButton circleFill={ props.circleFill } />
-                <KebobButton />
+    console.log(props.circleFill)
+    return (
+        <header>
+            <FlexBoxLayout flexType="rowBetween">
+                <h1 style={{cursor: "default"}}>{ props.title }</h1>
+                <FlexBoxLayout flexType="rowBetween" style={{width: "60px"}}>
+                    <AddTodoButton circleFill={ props.circleFill } />
+                    <KebobButton />
+                </FlexBoxLayout>
             </FlexBoxLayout>
-        </FlexBoxLayout>
-    </header>
-  )
+        </header>
+    )
 }
 
 export default TodoListHeader
