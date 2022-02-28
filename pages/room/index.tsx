@@ -1,5 +1,5 @@
 import Nav from "@common/components/Nav"
-import TodoListCard from "@todo/components/TodoListConatiner"
+import TodoListCard from "@todo/components/TodoListCard"
 import TodoRoomMainHeader from "@todo/components/TodoRoomMainHeader"
 import { NextPage } from "next"
 import { doingList, doneList, todoList } from "src/data/sample"
