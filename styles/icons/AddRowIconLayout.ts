@@ -24,6 +24,11 @@ const AddRowIconLayout = styled.div<AddRowIconLayoutProps>`
         transition: all 500ms;
     }
 
+    svg {
+        min-width: 30px;
+        min-height: 30px;
+    }
+
     path {
         fill: #FFF;
     }

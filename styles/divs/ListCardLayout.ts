@@ -35,6 +35,16 @@ const ListCardLayout = styled.div<ListCardLayoutProps>`
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
         padding-bottom: 0.5rem;
         width: 100%;
+
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            min-height: 2rem;
+            font-size: 14pt;
+        }
     }
 `;
 
