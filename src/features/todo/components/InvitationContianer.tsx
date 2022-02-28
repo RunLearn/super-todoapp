@@ -1,12 +1,12 @@
 import FlexBoxLayout from "styles/divs/FlexBoxLayout"
 import { NextPage } from "next"
 import InvitationButton from "@common/icons/InvitationButton"
-import CloseButton from "@common/icons/CloseButton"
+import InvitationForm from "./InvitationForm"
 
 const InvitationContianer: NextPage = () => {
     return (
         <FlexBoxLayout flexType="rowRightMiddle">
-            <CloseButton />
+            <InvitationForm />
             <InvitationButton />
         </FlexBoxLayout>
     )

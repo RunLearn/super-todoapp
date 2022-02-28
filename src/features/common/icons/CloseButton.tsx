@@ -1,11 +1,15 @@
 import { NextPage } from "next"
 import { IoMdCloseCircleOutline } from "react-icons/io"
+import CloseIconLayout from "styles/icons/CloseIconLayout"
+export interface CloseButtonProps  {
+    style?: React.CSSProperties;
+}
 
-const CloseButton: NextPage = () => {
+const CloseButton: NextPage<CloseButtonProps> = (props) => {
   return (
-    <div>
+    <CloseIconLayout style={props.style}>
         <IoMdCloseCircleOutline />
-    </div>
+    </CloseIconLayout>
   )
 }
 
