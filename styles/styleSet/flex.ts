@@ -1,7 +1,7 @@
 export type FlexType =
     'colCenter' | 'colLeft' | 'colRight' |
     'rowAround' | 'rowAroundMiddle' | 'rowAroundBottom' |
-    'rowBetween' |
+    'rowBetween' | 'rowBetweenMiddle' | 'rowBetweenBottom' |
     'rowLeft' | 'rowLeftMiddle' |
     'rowRight' | 'rowRightMiddle' |
     'rowCenter' | 'rowCenterMiddle'
@@ -45,6 +45,18 @@ const flex = {
       flex-direction: row;
       justify-content: space-between;
       align-items: start;
+    `,
+    rowBetweenMiddle: `
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    `,
+    rowBetweenBottom: `
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
     `,
     rowLeft: `
       display: flex;
