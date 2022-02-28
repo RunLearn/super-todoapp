@@ -1,3 +1,4 @@
+import KebobButton from "@common/icons/KebobButton"
 import TodoItemSurface from "@todo/domain/TodoItemSurface"
 import { getDdayTo } from "@todo/utils/todo-function"
 import { NextPage } from "next"
@@ -25,6 +26,9 @@ const TodoItemSurfaceCard:NextPage<TodoItemSurface> = (props) => {
                             </>
                         )
                     }
+                </li>
+                <li>
+                    <KebobButton />
                 </li>
             </ul>
         </ItemSurfaceCardLayout>

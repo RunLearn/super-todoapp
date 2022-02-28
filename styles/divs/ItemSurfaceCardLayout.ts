@@ -38,9 +38,16 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
 
     transition: transform 500ms, z-index 0ms;
 
+    svg {
+        display: none;
+    }
+
     &:hover {
         transform: scale(1.02);
         z-index: 10;
+        svg {
+            display: block;
+        }
     }
 
     ul {
@@ -62,6 +69,9 @@ const ItemSurfaceCardLayout = styled.div<ItemSurfaceCardLayout>`
         font-size: 8pt;
     }
 
+    ul > li:last-child {
+        width: 20px;
+    }
 `;
 
 export default ItemSurfaceCardLayout

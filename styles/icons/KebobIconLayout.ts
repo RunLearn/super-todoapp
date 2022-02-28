@@ -4,12 +4,17 @@ const KebobIconLayout = styled.div`
     transition: all 500ms;
     cursor: default;
 
-    &:hover {
-        transform: scale(1.3);
+    svg {
+        transition: all 500ms;
+        fill: gray;
+    }
+
+    &:hover svg {
+        fill: black;
     }
 
     &:active {
-        transform: scale(1.2);
+        transform: scale(0.9);
     }
 `;
 
