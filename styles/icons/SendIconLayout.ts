@@ -34,10 +34,8 @@ const SendIconLayout = styled.div`
         }
     }
 
-    &:active {
-        svg {
-            transform: scale(0.8);
-        }
+    &:active svg {
+        transform: scale(0.8);
     }
 `;
 
