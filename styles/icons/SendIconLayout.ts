@@ -9,6 +9,9 @@ const SendIconLayout = styled.div`
     padding-top: 0.3rem;
 
     svg {
+        min-width: 15px;
+        min-height: 15px;
+
         fill: var(--light-gray);
         transition: all 300ms;
     }
