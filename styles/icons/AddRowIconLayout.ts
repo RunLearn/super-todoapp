@@ -7,7 +7,6 @@ export interface AddRowIconLayoutProps {
 
 const AddRowIconLayout = styled.div<AddRowIconLayoutProps>`
     ${(props) => {
-        console.log(props.circleFill)
         if(props.circleFill && Object.keys(palette).includes(props.circleFill)) {
             props.circleFill = props.theme[props.circleFill]
         }

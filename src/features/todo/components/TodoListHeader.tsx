@@ -7,7 +7,6 @@ export interface TodoListHeaderProps extends AddTodoButtonProps {
 }
 
 const TodoListHeader: NextPage<TodoListHeaderProps> = (props) => {
-    console.log(props.circleFill)
     return (
         <header>
             <FlexBoxLayout flexType="rowBetween">
