@@ -14,7 +14,7 @@ const KebobIconLayout = styled.div`
     }
 
     &:active {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 `;
 
