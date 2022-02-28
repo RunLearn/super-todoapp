@@ -4,7 +4,7 @@ import React from 'react'
 import MainLayout from 'styles/divs/MainLayout'
 import ButtonLayout from 'styles/buttons/ButtonLayout'
 import FlexBoxLayout from 'styles/divs/FlexBoxLayout'
-import TodoListConatiner from '@todo/components/TodoListConatiner'
+import TodoListCard from '@todo/components/TodoListConatiner'
 import { doingList, doneList, todoList } from 'src/data/sample'
 
 const ButtonSamplePage: NextPage = () => {
@@ -39,9 +39,9 @@ const ButtonSamplePage: NextPage = () => {
                         <h1>Flex Box, Cards, List Container Preview</h1>
                     </header>
                     <FlexBoxLayout flexType="rowAround">
-                        <TodoListConatiner title="Todo" list={ todoList } />
-                        <TodoListConatiner title="Doing" list={ doingList } backgroundColor="info" />
-                        <TodoListConatiner title="Done" list={ doneList } backgroundColor="success" />
+                        <TodoListCard title="Todo" list={ todoList } />
+                        <TodoListCard title="Doing" list={ doingList } backgroundColor="info" />
+                        <TodoListCard title="Done" list={ doneList } backgroundColor="success" />
                     </FlexBoxLayout>
                 </section>
             </MainLayout>

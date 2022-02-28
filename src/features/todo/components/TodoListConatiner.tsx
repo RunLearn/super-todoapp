@@ -1,18 +1,18 @@
 import TodoItemSurface from "@todo/domain/TodoItemSurface"
 import { NextPage } from "next"
-import ListContainerCardLayout, { ListContainerCardLayoutProps } from "styles/divs/ListContainerCardLayout"
+import ListCardLayout, { ListCardLayoutProps } from "styles/divs/ListCardLayout"
 import { AddRowIconLayoutProps } from "styles/icons/AddRowIconLayout"
 import TodoItemSurfaceCard from "./TodoItemSurfaceCard"
 import TodoListHeader from "./TodoListHeader"
 
-export interface TodoListContainerProps extends ListContainerCardLayoutProps, AddRowIconLayoutProps {
+export interface TodoListContainerProps extends ListCardLayoutProps, AddRowIconLayoutProps {
     title: string;
     list: TodoItemSurface[] | undefined;  // TodoItemDetail is enable too.
 }
 
-const TodoListConatiner: NextPage<TodoListContainerProps> = (props) => {
+const TodoListCard: NextPage<TodoListContainerProps> = (props) => {
   return (
-    <ListContainerCardLayout backgroundColor={ props.backgroundColor } titleColor={ props.titleColor }>
+    <ListCardLayout backgroundColor={ props.backgroundColor } titleColor={ props.titleColor }>
         <TodoListHeader title={ props.title } circleFill={ props.circleFill ?? props.backgroundColor } />
         <ul>
             {
@@ -25,8 +25,8 @@ const TodoListConatiner: NextPage<TodoListContainerProps> = (props) => {
                 })
             }
         </ul>
-    </ListContainerCardLayout>
+    </ListCardLayout>
   )
 }
 
-export default TodoListConatiner
+export default TodoListCard
