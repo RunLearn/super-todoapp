@@ -26,6 +26,7 @@ const ListCardLayout = styled.div<ListCardLayoutProps>`
     background-color: var(--bg-color);
     border-radius: 5px;
     box-shadow: ${props => props.theme.shadowLarge};
+    margin-bottom: 1rem;
     padding: 1rem;
 
     header {

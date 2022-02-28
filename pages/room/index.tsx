@@ -5,6 +5,7 @@ import { NextPage } from "next"
 import { doingList, doneList, todoList } from "src/data/sample"
 import FlexBoxLayout from "styles/divs/FlexBoxLayout"
 import MainLayout from "styles/divs/MainLayout"
+import { ReactiveFlexBoxLayout } from "styles/divs/ReactiveFlexBoxLayout"
 
 const TodoPage: NextPage = () => {
     return (
@@ -15,11 +16,11 @@ const TodoPage: NextPage = () => {
             <MainLayout>
                 <TodoRoomMainHeader />
                 <FlexBoxLayout flexType="colLeft" style={{paddingTop: "0.5rem"}}>
-                    <FlexBoxLayout flexType="rowAround" style={{width: "100%", paddingTop: "1rem"}}>
+                    <ReactiveFlexBoxLayout style={{width: "100%", paddingTop: "1rem"}}>
                         <TodoListCard title="Todo" list={ todoList } backgroundColor="primary" />
                         <TodoListCard title="Doing" list={ doingList } backgroundColor="success" />
                         <TodoListCard title="Done" list={ doneList } backgroundColor="info" />
-                    </FlexBoxLayout>
+                    </ReactiveFlexBoxLayout>
                 </FlexBoxLayout>
             </MainLayout>
         </>
