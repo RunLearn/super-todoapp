@@ -5,7 +5,7 @@ import InvitationForm from "./InvitationForm"
 
 const InvitationContianer: NextPage = () => {
     return (
-        <FlexBoxLayout flexType="rowRightMiddle" style={{paddingBottom: "0.5rem"}}>
+        <FlexBoxLayout flexType="rowRightMiddle" style={{paddingTop: "1rem", paddingBottom: "0.5rem"}}>
             <InvitationForm />
             <InvitationButton />
         </FlexBoxLayout>
