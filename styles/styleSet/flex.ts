@@ -20,7 +20,7 @@ const flex = {
     colRight: `
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
     `,
     rowAround: `
       display: flex;
@@ -38,7 +38,7 @@ const flex = {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      align-items: end;
+      align-items: flex-end;
     `,
     rowBetween: `
       display: flex;
@@ -61,13 +61,13 @@ const flex = {
     rowRight: `
       display: flex;
       flex-direction: row;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: start;
     `,
     rowRightMiddle: `
       display: flex;
       flex-direction: row;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
     `,
     rowCenter: `
