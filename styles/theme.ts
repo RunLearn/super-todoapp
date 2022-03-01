@@ -4,8 +4,8 @@ import { hexWithOpacity } from "./functions/style-function";
 import flex from "./styleSet/flex";
 
 export const palette = {
-  main: "#7b9acc",
-  sub: "#FCF6F5",
+  main: "#755139",
+  sub: "#F2EDD7",
   lightGray: '#CCCCCC',
   gray: "#888888",
   grey: "#888888",
