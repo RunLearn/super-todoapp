@@ -42,7 +42,7 @@ const AddRowIconLayout = styled.div<AddRowIconLayoutProps>`
     }
 
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.11);
         circle {
             fill: var(--circ-fill);
             stroke: white;
@@ -51,7 +51,7 @@ const AddRowIconLayout = styled.div<AddRowIconLayoutProps>`
     }
 
     &:active {
-        transform: scale(1.25);
+        transform: scale(1.0);
     }
 `;
 
