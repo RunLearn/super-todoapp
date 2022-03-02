@@ -1,5 +1,6 @@
 export type FlexType =
-    'colCenter' | 'colLeft' | 'colRight' |
+    'colCenter' | 'colLeft' |
+    'colRight' | 'colRightFliplr' | 'colRightMiddleFliplr' |
     'rowAround' | 'rowAroundMiddle' | 'rowAroundBottom' |
     'rowBetween' | 'rowBetweenMiddle' | 'rowBetweenBottom' |
     'rowLeft' | 'rowLeftMiddle' |
@@ -21,6 +22,16 @@ const flex = {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+    `,
+    colRightFliplr: `
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    `,
+    colRightMiddleFliplr: `
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     `,
     rowAround: `
       display: flex;
