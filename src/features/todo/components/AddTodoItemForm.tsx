@@ -49,7 +49,15 @@ const AddTodoItemForm: NextPage<AddTodoItemFormProps> = (props) => {
                     <span />
                 </div>
             </div>
-            <FlexBoxLayout flexType="rowBetweenMiddle" className="input-container deadline-container">
+            <FlexBoxLayout flexType="rowBetweenMiddle" className="input-container deadline-container"
+                onClick={(event)=>{
+                    const me = event.target as HTMLElement
+                    if(me.classList.contains('input-container') ||
+                            ["h1", "h2", "h3", "h4", "h5", "h6"].includes(me.tagName)) {
+                        (document.querySelector('input[name="deadline-year"]') as HTMLElement).focus()
+                    }
+                }}
+            >
                 <h6>Deadline</h6>
                 <ReactiveFlexBoxLayout>
                     <div className="input-cell">
