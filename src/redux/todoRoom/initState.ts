@@ -1,3 +1,9 @@
+import { nanoid } from '@reduxjs/toolkit';
+
+const initState:TodoType[]= [
+
+]
+
 interface TodoType {
   id: string
   title: string
@@ -7,5 +13,4 @@ interface TodoType {
   createDate:Date
   dueDate: Date
 }
-
-export default TodoType;
+export default initState;

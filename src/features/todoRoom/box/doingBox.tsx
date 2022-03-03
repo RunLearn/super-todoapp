@@ -1,6 +1,6 @@
 import react from 'react';
 import styled from 'styled-components';
-import TodoCard from '../buttons/todoCard';
+import TodoCard from '../todoCard/todoCard';
 import TodoContiner from './TodoContainer';
 
 import { useSelector } from 'react-redux';

@@ -1,11 +1,11 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import { Interface } from 'readline';
-import TempData from './initState';
+import initState from './initState';
 
 
 const DoingSlice=createSlice({
   name: 'doing',
-  initialState:TempData,
+  initialState:initState,
   reducers: {
     addDoing: {
       reducer: (state, action: PayloadAction) => {

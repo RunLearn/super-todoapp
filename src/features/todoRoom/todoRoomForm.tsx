@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import todos, { addTodo } from './redux_todoRoom/Todos'
+import todos, { addTodo } from '../../redux/todoRoom/Todos'
 import { useDispatch,useSelector } from 'react-redux';
-import { RootState } from '../store';
+import { RootState } from '../../redux/store';
 import { useState} from 'react';
 import { nanoid } from '@reduxjs/toolkit';
 

@@ -1,17 +1,16 @@
 import { createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit';
 import { Interface } from 'readline';
 import { Id } from '@reduxjs/toolkit/dist/query/tsHelpers';
-import TempData from './initState';
 import initState from './initState';
 import { addDoing } from './Doings';
 import { createDispatchHook, useDispatch } from 'react-redux';
-import { store, RootState } from '../../../redux/store';
+import { store, RootState } from '../store';
 
 
 const TodoSlice=createSlice({
 
   name: 'todo',
-  initialState:TempData,
+  initialState:initState,
   reducers: {
     addTodo: {
       reducer: (state, action: PayloadAction) => {

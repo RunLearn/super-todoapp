@@ -3,9 +3,9 @@ import DoneBox from '../../src/features/todoRoom/box/doneBox';
 import TodoBox from '../../src/features/todoRoom/box/todoBox';
 import DoingBox from '../../src/features/todoRoom/box/doingBox';
 import styled, { ThemeContext } from 'styled-components';
-import {addTodo} from '../../src/features/todoRoom/redux_todoRoom/Todos'
+import {addTodo} from '../../src/redux/todoRoom/Todos'
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../../src/features/store'
+import {RootState} from '../../src/redux/store'
 import TodoRoomForm from '../../src/features/todoRoom/todoRoomForm';
 import { theme as Theme} from '../../styles/theme';
 

@@ -2,9 +2,9 @@ import react from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addDoing, removeDoing } from '../redux_todoRoom/Doings';
-import { addTodo, removeTodo } from '../redux_todoRoom/Todos';
-import { addDone, removeDone } from '../redux_todoRoom/Dones';
+import { addDoing, removeDoing } from '../../../redux/todoRoom/Doings';
+import { addTodo, removeTodo } from '../../../redux/todoRoom/Todos';
+import { addDone, removeDone } from '../../../redux/todoRoom/Dones';
 
 // title: string
 // manager: string
