@@ -1,4 +1,5 @@
 import Nav from "@common/components/Nav"
+import AddTodoItemForm from "@todo/components/AddTodoItemForm"
 import TodoListCard from "@todo/components/TodoListCard"
 import TodoRoomMainHeader from "@todo/components/TodoRoomMainHeader"
 import { NextPage } from "next"
@@ -21,6 +22,9 @@ const TodoPage: NextPage = () => {
                         <TodoListCard title="Doing" list={ doingList } backgroundColor="success" />
                         <TodoListCard title="Done" list={ doneList } backgroundColor="info" />
                     </ReactiveFlexBoxLayout>
+                    <aside>
+                        <AddTodoItemForm listName="todo" />
+                    </aside>
                 </FlexBoxLayout>
             </MainLayout>
         </>
