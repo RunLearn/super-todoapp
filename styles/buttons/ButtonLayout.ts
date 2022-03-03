@@ -6,6 +6,7 @@ export type ButtonLayoutProps = {
 }
 
 const ButtonLayout = styled.button`
+    user-select: none;
     padding: 4px;
     border-radius: 3px;
 
