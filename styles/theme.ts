@@ -47,7 +47,8 @@ const styleSet = {
         ${
           ['light', 'sub', 'warning'].includes(className) && `
             border-style: solid;
-            border-color: rgb(200,200,200, 0.5);
+            border-width: 2px;
+            border-color: rgb(0,0,0, 1);
           `
         }
       }
