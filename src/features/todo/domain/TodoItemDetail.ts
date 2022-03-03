@@ -6,7 +6,7 @@ interface TodoItemDetail extends TodoItemSurface {
         name: string;
         deadline?: string;
     */
-    content: HTMLElement | string;
+    content?: HTMLElement | string;
     createdAt: string;
     completedAt?: string;
 }
