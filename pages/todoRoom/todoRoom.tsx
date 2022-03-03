@@ -1,12 +1,12 @@
 import React from "react";
-import DoneBox from '../../src/components/todoRoom/box/doneBox';
-import TodoBox from '../../src/components/todoRoom/box/todoBox';
-import DoingBox from '../../src/components/todoRoom/box/doingBox';
+import DoneBox from '../../src/features/todoRoom/box/doneBox';
+import TodoBox from '../../src/features/todoRoom/box/todoBox';
+import DoingBox from '../../src/features/todoRoom/box/doingBox';
 import styled, { ThemeContext } from 'styled-components';
-import {addTodo} from '../../src/redux/todoRoom/Todos'
+import {addTodo} from '../../src/features/todoRoom/redux_todoRoom/Todos'
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../../src/redux/store'
-import TodoRoomForm from '../../src/components/todoRoom/todoRoomForm';
+import {RootState} from '../../src/features/store'
+import TodoRoomForm from '../../src/features/todoRoom/todoRoomForm';
 import { theme as Theme} from '../../styles/theme';
 
 const todoRoom = () => {

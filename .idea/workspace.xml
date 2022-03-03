@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c415c7-1594-4070-a9ca-c556bb049f11" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/initState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_02_13_17_03_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_02_13_17_03__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/TodoContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/TodoContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doingBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/doingBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/doneBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/doneBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/box/todoBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/todoBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/CommonButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/buttons/CommonButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/buttons/todoCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/buttons/todoCardMethod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/buttons/todoCardMethod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoRoom/todoRoomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/todoRoomForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Doings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Doings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Dones.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Dones.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/initState.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/todoType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/todoType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +89,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todoServer/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/features" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,6 +99,14 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\x\Desktop\studystudystudy\my-first-next\src\features" />
+      <recent name="C:\Users\x\Desktop\studystudystudy\my-first-next\features" />
+      <recent name="C:\Users\x\Desktop\studystudystudy\my-first-next\src" />
+      <recent name="C:\Users\x\Desktop\studystudystudy\my-first-next\src\features\todoRoom" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +120,9 @@
       <workItem from="1644739373654" duration="896000" />
       <workItem from="1644833706577" duration="779000" />
       <workItem from="1644835464140" duration="7627000" />
-      <workItem from="1645266960323" duration="386000" />
+      <workItem from="1645266960323" duration="1274000" />
+      <workItem from="1645351136655" duration="59000" />
+      <workItem from="1646296280498" duration="705000" />
     </task>
     <servers />
   </component>

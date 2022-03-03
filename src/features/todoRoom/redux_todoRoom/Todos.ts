@@ -5,7 +5,7 @@ import TempData from './initState';
 import initState from './initState';
 import { addDoing } from './Doings';
 import { createDispatchHook, useDispatch } from 'react-redux';
-import { store, RootState } from '../store';
+import { store, RootState } from '../../../redux/store';
 
 
 const TodoSlice=createSlice({
