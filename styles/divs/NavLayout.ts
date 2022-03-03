@@ -18,17 +18,26 @@ const NavLayout = styled.nav`
     padding-left: 1rem;
     padding-top: 1.5rem;
 
-    display: flex;
-    flex-direction: row;
     left: 0px;
     top: 0px;
     height: auto;
     width: 100%;
     background: var(--main);
     
+    @media screen and (max-width: 768px) {
+        ${props => props.theme.styleSet.flex["rowBetweenMiddle"]}
+    }
+    
+    @media screen and (min-width: 769px) {
+        ${props => props.theme.styleSet.flex["rowLeft"]}
+        h1, h2, h3, h4, h5, h6 {
+            width: 300px;
+            word-break: break-word;
+        }
+    }
+
+
     h1, h2, h3, h4, h5, h6 {
-        width: 300px;
-        word-break: break-word;
         color: var(--sub);
         font-family: sans-serif;
         font-size: 16pt;
