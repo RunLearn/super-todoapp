@@ -8,8 +8,17 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body{
+    body {
         font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body>#__next {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
     }
 
     a {
