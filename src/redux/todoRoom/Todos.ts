@@ -18,7 +18,7 @@ const TodoSlice=createSlice({
       },
     },
 
-    removeTodo: {
+  removeTodo: {
       reducer: (state, action) => {
         return state.filter(one => one.id !== action.payload)
       }

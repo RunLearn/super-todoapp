@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48c415c7-1594-4070-a9ca-c556bb049f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/todoRoom/todoRoom.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/todoRoom/todoRoomImports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/box/doingBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/doingBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/box/doneBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/doneBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/box/todoBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/box/todoBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/buttons/CommonButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/buttons/todoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/todoCard/todoCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/buttons/todoCardMethod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Doings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Doings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Dones.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Dones.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/initState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/initState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/redux_todoRoom/todoType.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todoRoom/todoRoomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todoRoom/todoRoomForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/todoRoom/Todos.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,8 +102,18 @@
       <workItem from="1645266960323" duration="1274000" />
       <workItem from="1645351136655" duration="59000" />
       <workItem from="1646296280498" duration="705000" />
-      <workItem from="1646314850209" duration="9378000" />
+      <workItem from="1646314850209" duration="15239000" />
+      <workItem from="1646702578091" duration="62000" />
+      <workItem from="1646907863617" duration="3905000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor: 리덕스 파일 src에 옮김+필요없는 것들 삭제...">
+      <created>1646328160195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646328160195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +135,7 @@
     <MESSAGE value="refactor : 디렉토리 리펙토링, (TODO: ts 문법 적용해야함)" />
     <MESSAGE value="refactor : 디렉토리 리펙토링" />
     <MESSAGE value="refactor: 디렉토리 리펙토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 디렉토리 리펙토링" />
+    <MESSAGE value="refactor: 리덕스 파일 src에 옮김+필요없는 것들 삭제..." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 리덕스 파일 src에 옮김+필요없는 것들 삭제..." />
   </component>
 </project>
