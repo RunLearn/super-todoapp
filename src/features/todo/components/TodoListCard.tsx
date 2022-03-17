@@ -7,7 +7,7 @@ import TodoListHeader from "./TodoListHeader"
 
 export interface TodoListContainerProps extends ListCardLayoutProps, AddRowIconLayoutProps {
     title: string;
-    list: TodoItemSurface[] | undefined;  // TodoItemDetail is enable too.
+    list: TodoItemSurface[];  // TodoItemDetail is enable too.
 }
 
 const TodoListCard: NextPage<TodoListContainerProps> = (props) => {
@@ -16,10 +16,10 @@ const TodoListCard: NextPage<TodoListContainerProps> = (props) => {
         <TodoListHeader title={ props.title } circleFill={ props.circleFill ?? props.backgroundColor } />
         <ul>
             {
-                props.list?.map((item, index, array)=>{
+                props.list.length > 0 && props.list.map((item, index, array)=>{
                     return (
                         <li key={ index }>
-                            <TodoItemSurfaceCard title={ item.title } name={ item.name } deadline={ item.deadline } />
+                            <TodoItemSurfaceCard id={ item.id } title={ item.title } name={ item.name } deadline={ item.deadline } />
                         </li>
                     )
                 })
