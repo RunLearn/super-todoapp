@@ -11,6 +11,7 @@ module.exports = {
         // Turns off all rules that are unnecessary
         // or might conflict with Prettier(eslint-config-prettier).
         "prettier/@typescript-eslint",
+        "next/core-web-vitals",
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
