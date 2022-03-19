@@ -1,5 +1,5 @@
 interface TodoItemSurface {
-    id: number;
+    id: string;
     title: string;
     name: string;
     deadline?: string;

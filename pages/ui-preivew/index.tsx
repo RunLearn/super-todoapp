@@ -5,7 +5,7 @@ import MainLayout from 'styles/divs/MainLayout'
 import ButtonLayout from 'styles/buttons/ButtonLayout'
 import FlexBoxLayout from 'styles/divs/FlexBoxLayout'
 import TodoListCard from '@todo/components/TodoListCard'
-import { doingList, doneList, todoList } from 'src/data/sample'
+import { _doingList, _doneList, _todoList } from 'src/data/sample'
 
 const ButtonSamplePage: NextPage = () => {
     return (
@@ -39,9 +39,9 @@ const ButtonSamplePage: NextPage = () => {
                         <h1>Flex Box, Cards, List Container Preview</h1>
                     </header>
                     <FlexBoxLayout flexType="rowAround">
-                        <TodoListCard title="Todo" list={ todoList } />
-                        <TodoListCard title="Doing" list={ doingList } backgroundColor="info" />
-                        <TodoListCard title="Done" list={ doneList } backgroundColor="success" />
+                        <TodoListCard title="Todo" list={ _todoList } />
+                        <TodoListCard title="Doing" list={ _doingList } backgroundColor="info" />
+                        <TodoListCard title="Done" list={ _doneList } backgroundColor="success" />
                     </FlexBoxLayout>
                 </section>
             </MainLayout>
